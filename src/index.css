@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-space: 'Space Grotesk', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-cinzel);
+  }
+}
+
+/* Custom smooth dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09090e;
+}
+::-webkit-scrollbar-thumb {
+  background: #252538;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3b58;
+}
+
+/* Glassmorphism & glows */
+.glass-panel {
+  background: rgba(18, 18, 28, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(24, 24, 38, 0.85);
+  border-color: rgba(168, 85, 247, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(147, 51, 234, 0.15);
+}
+
+/* Horizontal scroll hide bar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

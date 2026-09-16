@@ -1,0 +1,7 @@
+{
+  "name": "KAGE - 8K Anime Art Atelier",
+  "description": "Premium 8K original anime-inspired wall art, museum-grade archival prints, and luxury framed collector pieces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
